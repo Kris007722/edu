@@ -9978,3 +9978,11 @@ h6,
   object-fit: cover;
    width: 100%;
 }
+.talleres .card {
+    height: 100%; 
+   display: flex;
+   flex-direction: column;
+}
+.talleres .card-body {
+  flex-grow: 1; 
+}
