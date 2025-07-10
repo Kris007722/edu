@@ -9986,3 +9986,36 @@ h6,
 .talleres .card-body {
   flex-grow: 1; 
 }
+.talleres .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.talleres .card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+}
+
+.talleres .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.talleres .card-title {
+    min-height: 60px;
+}
+
+.talleres .btn {
+    margin-top: auto;
+    align-self: center;
+    width: 80%;
+}
+
+.talleres .col-md-4 {
+    display: flex !important;
+    margin-bottom: 20px !important;
+}
