@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Educación de primer nivel</title>
+    <title>Metodología Educativa | Educación de primer nivel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="../img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,14 +18,46 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* Estilos personalizados para el blog */
+        .blog-detail {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-meta {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        .blog-content {
+            line-height: 1.8;
+        }
+        .blog-content p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-quote {
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+            font-style: italic;
+            color: #555;
+            margin: 2rem 0;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3">
+    <!-- Navbar Start (TÚ NAVBAR ORIGINAL - NO MODIFICADO) -->
+   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3">
     <div class="container">
         <a class="navbar-brand font-weight-bold" href="#">Educación</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -60,20 +92,39 @@
     </div>
 </nav>
     <!-- Navbar End -->
-    
-	    <!-- CONTENIDO ESPECÍFICO DEL BLOG -->
-<div class="container py-5">
-        <article class="blog-post">
-            <h1>Resultados</h1>
-            <img src="../img/blog-1.jpg" class="img-fluid my-4">
-            <div class="content">
-                <!-- Texto completo del artículo aquí -->
-                <p>Descripción detallada del proyecto...</p>
-                <h3>Objetivos</h3>
-                <p>Lista de metas educativas...</p>
+
+    <!-- Contenido del Blog (Nuevo diseño que te gustó) -->
+    <div class="container py-5">
+        <div class="blog-detail">
+            <!-- Encabezado -->
+            <div class="text-center mb-5">
+                <h1 class="mb-3">Motivación y Visión del Proyecto</h1>
+                <div class="blog-meta">
+                    <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> 10 Julio, 2025</span>
+                    <span><i class="far fa-user mr-1"></i> Por: Kristal Arzola</span>
+                </div>
             </div>
-            <a href="../index.html#blog" class="btn btn-primary mt-4">← Volver al Blog</a>
-        </article>
+
+            <!-- Imagen destacada -->
+            <img src="../img/blog12.jpg" class="img-fluid rounded mb-4" style="width: 700px; height: 450px; object-fit: cover;" alt="Metodología de enseñanza">
+
+            <!-- Contenido -->
+            <div class="blog-content">
+                <h3 class="text-primary mb-3">¿Por qué surgió esta idea?</h3>
+                <p>La idea de este proyecto nació a partir de la necesidad de reforzar la educación actual, que muchas veces resulta poco dinámica y termina desmotivando a los niños y jóvenes, afectando su interés por aprender y asistir a clases. A través de estos talleres, se busca ofrecer una forma de aprendizaje más activa, entretenida y cercana a sus intereses. Además, se pretende que los participantes desarrollen o fortalezcan habilidades que disfruten y que les sean útiles en su vida futura. Esto les ayudará a descubrir sus talentos, aumentar su confianza y tener una visión más clara de lo que quieren para su futuro.</p>
+                </div>
+                </div>
+	       <h3 class="text-primary mb-3">A quiénes está dirigido específicamente</h3>
+	       <p>Los talleres están dirigidos principalmente a niñas, niños y jóvenes que cursan la educación básica en escuelas públicas de México. </p>
+
+
+            <!-- Botón de volver -->
+            <div class="mt-5 pt-4 border-top text-center">
+                <a href="../index.html#blog" class="btn btn-primary px-4">
+                    <i class="fa fa-arrow-left mr-2"></i> Volver al sitio web
+                </a>
+            </div>
+        </div>
     </div>
 	<!-- Footer Start -->
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
