@@ -31,29 +31,29 @@
     <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3">
     <div class="container">
-        <a class="navbar-brand font-weight-bold" href="#">Educación</a>
+        <a class="navbar-brand font-weight-bold" href="#inicio">Educación</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nosotros</a>
+                    <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nuestros talleristas</a>
+                    <a class="nav-link" href="#talleristas">Nuestros talleristas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Talleres</a>
+                    <a class="nav-link" href="#talleres">Talleres</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reviews</a>
+                    <a class="nav-link" href="#reviews">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
             <div class="ml-auto d-flex align-items-center">
@@ -67,7 +67,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 mb-5">
+    <div id="inicio" class="container-fluid p-0 pb-5 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
@@ -111,25 +111,23 @@ Explora nuestros talleres, conoce a nuestros talleristas y forma parte del cambi
     <!-- Carousel End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/sobre.jpg" alt="">
+    <!-- About Start - Elimina el section duplicado -->
+<section id="sobre-nosotros" class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/sobre.jpg" alt="">
+            </div>
+            <div class="col-lg-7">
+                <div class="text-left mb-4">
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Sobre nosotros</h5>
+                    <h1>Impulsando el aprendizaje significativo en niños y jóvenes</h1>
                 </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
-                        <section id="sobre-nosotros" class="container-fluid py-5"> 
-</section>
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Sobre nosotros</h5>
-                        <h1>Impulsando el aprendizaje significativo en niños y jóvenes</h1>
-                    </div>
-                    <p>Este proyecto nace de la necesidad de transformar la educación tradicional en una experiencia más dinámica, creativa y cercana a la realidad. Buscamos que niñas, niños y jóvenes aprendan habilidades útiles para su vida diaria y su futuro, a través de actividades prácticas, colaborativas y significativas.   Este proyecto fue creado y desarrollado por Kristal Arzola</p>
-                </div>
+                <p>[...]</p>
             </div>
         </div>
     </div>
+</section>
     <!-- About End -->
         <!-- Blog Start -->
    <!-- Blog Start -->
@@ -194,7 +192,7 @@ Explora nuestros talleres, conoce a nuestros talleristas y forma parte del cambi
 
 
     <!-- Category Start -->
-    <div class="container-fluid py-5">
+    <div id="talleres" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Talleres</h5>
@@ -326,7 +324,7 @@ Explora nuestros talleres, conoce a nuestros talleristas y forma parte del cambi
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div id="talleristas" class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Talleristas</h5>
@@ -404,7 +402,7 @@ Explora nuestros talleres, conoce a nuestros talleristas y forma parte del cambi
 
 
     <!-- Testimonial Start -->
-<section id="reviews" class="container-fluid py-5"> <!-- ID añadido aquí -->
+<section id="reviews" class="container-fluid py-5">
     <div class="container py-5">
         <div class="text-center mb-5">
             <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonios</h5>
@@ -484,6 +482,24 @@ Explora nuestros talleres, conoce a nuestros talleristas y forma parte del cambi
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
